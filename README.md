@@ -74,12 +74,6 @@ Access this documentation through our MCP server:
   - `list_libraries` - List all available insurance providers
   - `fetch_documentation` - Retrieve specific documents
 
-### Example Queries
-- "What are UV's eligibility requirements for simplified issue life insurance?"
-- "Compare RBC disability insurance series"
-- "Find Empire Vie preferred underwriting criteria"
-- "What medical requirements does iA Financial require?"
-
 ### Search by Company
 Navigate to the company folder (e.g., `Assomption/`, `Emma/`, `RBC/`, `UV/`)
 

@@ -13,9 +13,14 @@ RUN apt-get update && apt-get install -y \
 # Install docs-mcp-server globally
 RUN npm install -g @arabold/docs-mcp-server
 
-# Copy startup script
+# Copy package.json and install dependencies
+COPY package.json /app/package.json
+RUN npm install --production
+
+# Copy proxy server and startup script
+COPY proxy-server.js /app/proxy-server.js
 COPY start.sh /app/start.sh
-RUN chmod +x /app/start.sh
+RUN chmod +x /app/start.sh /app/proxy-server.js
 
 # Set environment variables
 ENV DOCS_MCP_PROTOCOL=http
