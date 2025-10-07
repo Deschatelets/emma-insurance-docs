@@ -1,6 +1,13 @@
-FROM node:20-alpine
+FROM node:20-slim
 
 WORKDIR /app
+
+# Install system dependencies for sqlite-vec
+RUN apt-get update && apt-get install -y \
+    python3 \
+    make \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install docs-mcp-server globally
 RUN npm install -g @arabold/docs-mcp-server
@@ -19,5 +26,5 @@ ENV HOST=0.0.0.0
 EXPOSE 6280
 
 # Start using shell script (shell form to allow variable expansion)
-CMD /bin/sh /app/start.sh
+CMD /bin/bash /app/start.sh
 
