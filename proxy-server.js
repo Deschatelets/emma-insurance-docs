@@ -26,7 +26,7 @@ const server = http.createServer((req, res) => {
     res.end(JSON.stringify({ 
       status: 'healthy', 
       timestamp: new Date().toISOString(),
-      service: 'emma_docs-mcp-proxy'
+      service: 'emma-docs-mcp-proxy'
     }));
     return;
   }
