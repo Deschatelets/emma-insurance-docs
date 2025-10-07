@@ -10,7 +10,7 @@ echo "PORT: $PORT"
 echo "HOST: 0.0.0.0"
 echo "==================================="
 
-# Scrape docs from GitHub
+# Scrape docs from GitHub (will use full-text search if no OpenAI API key)
 echo "Scraping docs from GitHub..."
 docs-mcp-server scrape emma-docs https://github.com/Deschatelets/emma-insurance-docs
 

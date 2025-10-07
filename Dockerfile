@@ -11,6 +11,7 @@ RUN chmod +x /app/start.sh
 
 # Set environment variables
 ENV DOCS_MCP_PROTOCOL=http
+ENV DOCS_MCP_EMBEDDING_MODEL=openai:text-embedding-3-small
 ENV PORT=6280
 ENV HOST=0.0.0.0
 
