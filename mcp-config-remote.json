@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "emma-docs": {
+      "url": "https://YOUR-APP-NAME.up.railway.app/mcp",
+      "transport": "http"
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+error: unknown option '--verbose'
+
+Usage: docs-mcp-server mcp [options]
+
+Start MCP server only
+
+Options:
+  --protocol <protocol>      Protocol for MCP server (choices: "auto", "stdio",
+                             "http", default: "auto", env: DOCS_MCP_PROTOCOL)
+  --port <number>            Port for the MCP server (default: "6280", env:
+                             PORT)
+  --host <host>              Host to bind the MCP server to (default:
+                             "127.0.0.1", env: HOST)
+  --embedding-model <model>  Embedding model configuration (e.g.,
+                             'openai:text-embedding-3-small') (env:
+                             DOCS_MCP_EMBEDDING_MODEL)
+  --server-url <url>         URL of external pipeline worker RPC (e.g.,
+                             http://localhost:6280/api)
+  --read-only                Run in read-only mode (only expose read tools,
+                             disable write/job tools) (default: false)
+  --auth-enabled             Enable OAuth2/OIDC authentication for MCP endpoints
+                             (default: false, env: DOCS_MCP_AUTH_ENABLED)
+  --auth-issuer-url <url>    Issuer/discovery URL for OAuth2/OIDC provider (env:
+                             DOCS_MCP_AUTH_ISSUER_URL)
+  --auth-audience <id>       JWT audience claim (identifies this protected
+                             resource) (env: DOCS_MCP_AUTH_AUDIENCE)
+  -h, --help                 display help for command
