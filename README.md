@@ -66,6 +66,20 @@ features: machine_readable_flags
 
 ## Usage
 
+### Via MCP Server (Recommended)
+Access this documentation through our MCP server:
+- **Endpoint:** `https://emma-insurance-docs-production.up.railway.app/mcp`
+- **Available Tools:**
+  - `search_docs` - Semantic search across all documentation
+  - `list_libraries` - List all available insurance providers
+  - `fetch_documentation` - Retrieve specific documents
+
+### Example Queries
+- "What are UV's eligibility requirements for simplified issue life insurance?"
+- "Compare RBC disability insurance series"
+- "Find Empire Vie preferred underwriting criteria"
+- "What medical requirements does iA Financial require?"
+
 ### Search by Company
 Navigate to the company folder (e.g., `Assomption/`, `Emma/`, `RBC/`, `UV/`)
 
