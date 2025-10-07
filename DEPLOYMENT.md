@@ -116,7 +116,7 @@ Expected response:
 {
   "status": "healthy",
   "timestamp": "2025-10-07T21:00:00.000Z",
-  "service": "emma-docs-mcp-proxy"
+  "service": "emma_docs-mcp-proxy"
 }
 ```
 
