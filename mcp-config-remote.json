@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "emma-docs": {
+    "emma_docs": {
       "url": "https://emma-insurance-docs-production.up.railway.app/mcp",
       "transport": "http"
     }
