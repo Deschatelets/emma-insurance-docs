@@ -15,5 +15,5 @@ EXPOSE 6280
 
 # Start command - scrape from GitHub then start server
 CMD docs-mcp-server scrape emma-docs https://github.com/Deschatelets/emma-insurance-docs && \
-    docs-mcp-server mcp --protocol http --port 6280 --host 0.0.0.0 --read-only
+    docs-mcp-server mcp --protocol http --port ${PORT:-6280} --host 0.0.0.0 --read-only
 
