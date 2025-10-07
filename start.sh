@@ -10,9 +10,12 @@ echo "PORT: $PORT"
 echo "HOST: 0.0.0.0"
 echo "==================================="
 
-# Scrape docs from GitHub (will use full-text search if no OpenAI API key)
-echo "Scraping docs from GitHub..."
-docs-mcp-server scrape emma-docs https://github.com/Deschatelets/emma-insurance-docs
+# Clone repo and scrape locally
+echo "Cloning docs from GitHub..."
+git clone --depth 1 https://github.com/Deschatelets/emma-insurance-docs.git /tmp/emma-docs
+
+echo "Scraping docs from local files..."
+docs-mcp-server scrape emma-docs "file:///tmp/emma-docs/produits-assurance-docs-french"
 
 echo "Docs scraped successfully!"
 echo "Starting MCP server..."

@@ -2,11 +2,12 @@ FROM node:20-slim
 
 WORKDIR /app
 
-# Install system dependencies for sqlite-vec
+# Install system dependencies for sqlite-vec and git
 RUN apt-get update && apt-get install -y \
     python3 \
     make \
     g++ \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Install docs-mcp-server globally
