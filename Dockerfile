@@ -22,6 +22,8 @@ ENV DOCS_MCP_PROTOCOL=http
 ENV DOCS_MCP_EMBEDDING_MODEL=openai:text-embedding-3-small
 ENV PORT=6280
 ENV HOST=0.0.0.0
+ENV DOCS_MCP_HOST=0.0.0.0
+# OPENAI_API_KEY should be set in Railway Variables for security
 
 # Expose port
 EXPOSE 6280
