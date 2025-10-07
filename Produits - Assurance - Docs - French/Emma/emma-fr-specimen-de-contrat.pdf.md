@@ -2,12 +2,12 @@
 document_type: specimen_contract
 insurer: Humania Assurance Inc.
 product_name: Emma
-product_owner: Humania Assurance Inc.
+product_owner: Emma Services Financiers
 product_type: Assurance vie temporaire
 language: fr
 version: 1.0
 document_title: "Spécimen de Contrat - Produit d'Assurance Vie Emma"
-full_product_name: "Emma Life Insurance Product Specimen Contract (Humania Assurance)"
+full_product_name: "Emma Life Insurance Product Specimen Contract"
 target_audience:
   - policyholders
   - representatives
@@ -31,7 +31,6 @@ issuer_address: "1555, rue Girouard Ouest, Saint-Hyacinthe (Québec) J2S 2Z6"
 ---
 
 # Spécimen de Contrat d'Assurance Vie Emma
-## Humania Assurance Inc.
 
 ---
 
