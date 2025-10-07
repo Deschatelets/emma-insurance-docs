@@ -17,6 +17,6 @@ ENV HOST=0.0.0.0
 # Expose port
 EXPOSE 6280
 
-# Start using shell script
-CMD ["/app/start.sh"]
+# Start using shell script (shell form to allow variable expansion)
+CMD /bin/sh /app/start.sh
 

@@ -5,7 +5,6 @@
     "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "startCommand": "docs-mcp-server mcp --protocol http --port $PORT --host 0.0.0.0 --read-only",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
