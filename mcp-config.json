@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "emma-docs": {
+      "command": "docs-mcp-server",
+      "args": [
+        "--source", "github",
+        "--owner", "Deschatelets",
+        "--repo", "emma-insurance-docs",
+        "--branch", "master"
+      ]
+    }
+  }
+}
+
