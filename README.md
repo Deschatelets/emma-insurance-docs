@@ -67,7 +67,7 @@ features: machine_readable_flags
 ## Usage
 
 ### Search by Company
-Navigate to the company folder (e.g., `Assomption/`, `Emma/` `RBC/`, `UV/`)
+Navigate to the company folder (e.g., `Assomption/`, `Emma/`, `RBC/`, `UV/`)
 
 ### Search by Product Type
 Use tags in frontmatter:
